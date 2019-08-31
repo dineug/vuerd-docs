@@ -1,8 +1,8 @@
 import {storiesOf} from '@storybook/vue'
-import Pure from '../components/Pure'
+import Demo from '../components/Demo'
 
-storiesOf('Demo', module)
-  .add('default', () => ({
-    components: {Pure},
-    template: '<Pure/>'
+storiesOf('Live', module)
+  .add('Demo', () => ({
+    components: {Demo},
+    template: '<Demo/>'
   }))
