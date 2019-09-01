@@ -1,4 +1,4 @@
-import { configure } from '@storybook/vue'
+import { configure, addParameters } from '@storybook/vue'
 
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -15,4 +15,10 @@ function loadStories() {
   require('../src/stories')
 }
 
+addParameters({
+  options: {
+    showPanel: false,
+  },
+})
 configure(loadStories, module)
+

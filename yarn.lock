@@ -5639,9 +5639,9 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-"raphael@git+https://github.com/nhn/raphael.git#2.2.0-c":
+"raphael@https://github.com/nhn/raphael.git#2.2.0-c":
   version "2.2.0-c"
-  resolved "git+https://github.com/nhn/raphael.git#78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0"
+  resolved "https://github.com/nhn/raphael.git#78a6ed3ec269f33b6457b0ec66f8c3d1f2ed70e0"
   dependencies:
     eve "git://github.com/adobe-webplatform/eve.git#eef80ed"
 
@@ -7121,10 +7121,10 @@ vuerd-core@^0.1.8:
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-plugin-tui.editor@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.1.0.tgz#8189ec5e162e1947dc6d3a3db3f4c6a39509134d"
-  integrity sha512-xgxX3gS+Adbk+KMXk2mXFkN6BT17v9WaPiFQQ9AvNc9u3226i3LQjbpC7jmtAGovQN3SxA+IyvYdxm+jA8OuIg==
+vuerd-plugin-tui.editor@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.1.1.tgz#38e916e1b44a3e829944bf84f4b8cd9e34e1477b"
+  integrity sha512-h9qaY/m+29Lx0RxQZMGFqMZuoLklAdOSxSnDqKWZb1zc5ZO5/aVupmFMROvzcxneZ6iugk1M8KKOGFmO3dvKiQ==
   dependencies:
     "@toast-ui/vue-editor" "^1.1.1"
 
