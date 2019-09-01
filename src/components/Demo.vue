@@ -25,7 +25,7 @@
           {
             name: 'default textarea',
             read: async (path, id) => {
-              return ''
+              return 'hellow'
             },
           },
           {
