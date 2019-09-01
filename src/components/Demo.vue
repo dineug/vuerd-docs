@@ -17,6 +17,12 @@
             },
           },
           {
+            name: 'default video preview.mp4',
+            read: async (path, id) => {
+              return 'https://www.w3schools.com/html/mov_bbb.mp4';
+            },
+          },
+          {
             name: 'default textarea',
             read: async (path, id) => {
               return ''
