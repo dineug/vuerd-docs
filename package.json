@@ -4,7 +4,7 @@
   "description": "vuerd document",
   "scripts": {
     "storybook": "start-storybook",
-    "build": "build-storybook -c .storybook -o docs"
+    "build": "build-storybook -c .storybook -o dist"
   },
   "author": "dineug <dineug2@gmail.com>",
   "homepage": "https://github.com/vuerd/vuerd-docs#readme",
