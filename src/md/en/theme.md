@@ -23,21 +23,21 @@
 ```
 
 ## titleBar
-![titleBar](/images/titleBar.png)
+![titleBar](https://vuerd.github.io/vuerd-docs/images/titleBar.png)
 ## activity
-![activity](/images/activity.png)
+![activity](https://vuerd.github.io/vuerd-docs/images/activity.png)
 ## sidebar
-![sidebar](/images/sidebar.png)
+![sidebar](https://vuerd.github.io/vuerd-docs/images/sidebar.png)
 ## contextmenu
-![contextmenu](/images/contextmenu.png)
+![contextmenu](https://vuerd.github.io/vuerd-docs/images/contextmenu.png)
 ## editor
-![editor](/images/editor.png)
+![editor](https://vuerd.github.io/vuerd-docs/images/editor.png)
 ## tabBar
-![tabBar](/images/tabBar.png)
+![tabBar](https://vuerd.github.io/vuerd-docs/images/tabBar.png)
 ## tab
-![tab](/images/tab.png)
+![tab](https://vuerd.github.io/vuerd-docs/images/tab.png)
 ## statusbar
-![statusbar](/images/statusbar.png)
+![statusbar](https://vuerd.github.io/vuerd-docs/images/statusbar.png)
 
 ## Example - javascript
 ### index.js
