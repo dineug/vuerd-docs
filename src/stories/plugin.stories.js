@@ -7,7 +7,7 @@ const stories = storiesOf('Plugin|Command', module)
 stories.add('editor', () => ({
   computed: {md: () => markdown[`./${store.state.locale}/editor.md`]},
   template: `<MarkDown :value="md"/>`,
-}), {notes: markdown[`./${store.state.locale}/editor.md`]})
+}))
 
 stories.add('theme', () => ({
   computed: {md: () => markdown[`./${store.state.locale}/theme.md`]},
