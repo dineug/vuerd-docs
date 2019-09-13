@@ -179,7 +179,7 @@ export default {
 };
 ```
 
-## EditorOption interface
+## EditorOption Interface
 ```typescript
 import {Component} from 'vue';
 export interface EditorOption {

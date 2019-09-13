@@ -1,4 +1,4 @@
-# Editor plugin 개발하기
+# Editor Plugin 개발하기
 
 ## Component Wrapping 구조
 ```javascript
@@ -179,7 +179,7 @@ export default {
 };
 ```
 
-## EditorOption interface
+## EditorOption Interface
 ```typescript
 import {Component} from 'vue';
 export interface EditorOption {
