@@ -3,31 +3,29 @@
 ## Component Wrapping Structure
 ```javascript
 export default {
-  data: () => ({
-    // Injection value
-    value: '',
-    scope: '',
-    width: 0,
-    height: 0,
-    color: {
-      drop: '',
-      sash: '',
-      active: '',
-      editor: '',
-      titleBar: '',
-      activity: '',
-      statusbar: '',
-      font: '',
-      fontActive: '',
-      contextmenu: '',
-      contextmenuActive: '',
-      sidebar: '',
-      sidebarActive: '',
-      tabBar: '',
-      tab: '',
-      tabActive: '',
+  props: {
+    // Injection prop
+    value: {
+      type: String,
+      default: '',
     },
-  }),
+    scope: {
+      type: String,
+      default: '',
+    },
+    width: {
+      type: Number,
+      default: 0,
+    },
+    height: {
+      type: Number,
+      default: 0,
+    },
+    color: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
   methods: {
     onChange() {
       this.$emit('change', '')
@@ -39,14 +37,14 @@ export default {
 }
 ```
 
-## Data
+## Prop
 | Name | Type | Describe |
 | --- | --- | --- |
 | value | String | editor data |
 | scope | String | extension or filename |
 | width | Number | width |
 | height | Number | height |
-| color | Object | theme color |
+| color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
 
 ## Emit
 | event | Type | Describe |
@@ -71,10 +69,16 @@ export default {
 <script>
   export default {
     name: 'TextEditor',
-    data: () => ({
-      value: '',
-      color: {},
-    }),
+    props: {
+      value: {
+        type: String,
+        default: '',
+      },
+      color: {
+        type: Object,
+        default: () => ({}),
+      },      
+    },
     methods: {
       onChange(event) {
         this.$emit('change', event.target.value)
@@ -133,8 +137,10 @@ export default {
 
   @Component
   export default class TextEditor extends Vue {
-    private value: string = '';
-    private color: Color | any = {};
+    @Prop({type: String, default: ''})
+    private value!: string;
+    @Prop({type: Object, default: () => ({})})
+    private color!: Color;
 
     private onChange(event: Event) {
       const textarea = event.target as HTMLTextAreaElement;
