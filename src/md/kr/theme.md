@@ -8,7 +8,7 @@
   active: '#00B3FF',
   editor: '#f3f3f3',
   titleBar: '#f3f3f3',
-  activity: '#f3f3f3',
+  activityBar: '#f3f3f3',
   statusbar: '#fafafa',
   font: '#616161',
   fontActive: 'black',
@@ -24,8 +24,8 @@
 
 ## titleBar
 ![titleBar](https://vuerd.github.io/vuerd-docs/images/titleBar.png)
-## activity
-![activity](https://vuerd.github.io/vuerd-docs/images/activity.png)
+## activityBar
+![activityBar](https://vuerd.github.io/vuerd-docs/images/activityBar.png)
 ## sidebar
 ![sidebar](https://vuerd.github.io/vuerd-docs/images/sidebar.png)
 ## contextmenu
