@@ -47,7 +47,7 @@ export default {
 | color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
 
 ## Emit
-| event | Type | Describe |
+| Event | Type | Describe |
 | --- | --- | --- |
 | change | String | editor data |
 | input | String | editor data |
