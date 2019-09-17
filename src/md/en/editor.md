@@ -21,6 +21,10 @@ export default {
       type: Number,
       default: 0,
     },
+    focus: {
+      type: Boolean,
+      default: false,
+    },
     color: {
       type: Object,
       default: () => ({}),
@@ -44,6 +48,7 @@ export default {
 | scope | String | extension or filename |
 | width | Number | width |
 | height | Number | height |
+| focus | Boolean | current focus |
 | color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
 
 ## Emit

@@ -21,6 +21,10 @@ export default {
       type: Number,
       default: 0,
     },
+    focus: {
+      type: Boolean,
+      default: false,
+    },
     color: {
       type: Object,
       default: () => ({}),
@@ -44,6 +48,7 @@ export default {
 | scope | String | 확장자 or 파일이름 |
 | width | Number | 너비 |
 | height | Number | 높이 |
+| focus | Boolean | 현재 focus |
 | color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
 
 ## Emit
