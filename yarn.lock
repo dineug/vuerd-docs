@@ -1114,6 +1114,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
+"@types/jasmine@^3.3.8":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.4.0.tgz#018c56db42400c092aae47de21f710b7f04e4b06"
+  integrity sha512-6pUnBg6DuSB55xnxJ5+gW9JOkFrPsXkYAuqqEE8oyrpgDiPQ+TZ+1Zt4S+CHcRJcxyNYXeIXG4vHSzdF6y9Uvw==
+
 "@types/jquery@^3.3.29":
   version "3.3.31"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.31.tgz#27c706e4bf488474e1cb54a71d8303f37c93451b"
@@ -7108,6 +7113,13 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
+vscode-icons-js@^9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/vscode-icons-js/-/vscode-icons-js-9.3.0.tgz#7f07d5bb6fdf611e2a9a30796f5cc3ffed919c76"
+  integrity sha512-yUGnl/ikSIGgoI3LJef4Q86LZOpoQn2a1Jc67GPKP1k2GK/v93xY9yI0vF1sBImPuRf/KfiWal/a7xhQ0pR94Q==
+  dependencies:
+    "@types/jasmine" "^3.3.8"
+
 vue-class-component@^7.0.1, vue-class-component@^7.0.2:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.1.0.tgz#b33efcb10e17236d684f70b1e96f1946ec793e87"
@@ -7162,15 +7174,16 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuerd-core@^0.2.11:
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.11.tgz#3124c6501708cc3a8b1c9713557c69756ba65044"
-  integrity sha512-M+CNSn5BiIUTa+sYEU45GjriN6S1drk9uZLEVuqhKYWzSPuo6oZlsYRyyYzh2p79zJxgImHDbBa+hKrT+imIBA==
+vuerd-core@^0.2.13:
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.13.tgz#007022c0ed77bbd540c4eefe15969d530c241448"
+  integrity sha512-ejvBNpUkmTa6i2OorG3Gz4yHsy//Jh8sMaaFy6kXaxpZx7ob6GRnXBb5tLdNoZ3mIWkD5RqH5+NZ6Gw7rUMSMQ==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
     core-js "^2.6.5"
     rxjs "^6.5.2"
     uuid "^3.3.2"
+    vscode-icons-js "^9.3.0"
     vue "^2.6.10"
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"

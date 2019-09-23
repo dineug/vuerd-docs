@@ -215,17 +215,17 @@ export default {
 };
 ```
 
-## EditorOption Interface
+## Editor Interface
 ```typescript
 import {Component} from 'vue';
-export interface EditorOption {
+export interface Editor {
   component: Component;
   scope: Array<string | RegExp>;
   exclude?: Array<string | RegExp>;
 }
 ```
 
-## EditorOption
+## Editor
 | Name | Type | Describe |
 | --- | --- | --- |
 | component | vue component | vue 컴포넌트 |
