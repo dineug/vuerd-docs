@@ -27,7 +27,7 @@ export const language = [
       {
         name: '한국어',
         props: {
-          locale: 'kr',
+          locale: 'ko',
         },
       },
     ],
