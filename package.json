@@ -18,7 +18,7 @@
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
     "vuerd-core": "^0.2.18",
-    "vuerd-plugin-erd": "^0.1.1",
+    "vuerd-plugin-erd": "^0.1.4",
     "vuerd-plugin-tui.editor": "^0.1.6",
     "vuex": "^3.1.1"
   },

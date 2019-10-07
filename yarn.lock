@@ -7430,10 +7430,10 @@ vuerd-core@^0.2.8:
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-plugin-erd@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.1.1.tgz#71ccd08f5bd5dc1a7f38d57fd53112569c6bca43"
-  integrity sha512-VFkMTVdjsRjtQuMzI+PFyVrHf8K2fvqMZoiQ1gcniapKHoSFd+mmpgJyEO4cAMo/AVyzUJP0Q6ZEPwKdo6RfoQ==
+vuerd-plugin-erd@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.1.4.tgz#d5ba71efb8a921f99474361c1b788132f3b402d5"
+  integrity sha512-o/A+ltTQy6g0VCvDrk6ek4TVVvaFWNYU5XDuB7XMXBPPL8UJJY35krHjFvHXyfizP2Ys2Rw8UDZGGS9FhCES5w==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
     core-js "^2.6.5"
