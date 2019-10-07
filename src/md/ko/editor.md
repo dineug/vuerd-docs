@@ -29,6 +29,15 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    // Option
+    undo: {
+      type: Boolean,
+      default: false,
+    },
+    redo: {
+      type: Boolean,
+      default: false,
+    },
   },
   methods: {
     onChange() {
@@ -36,7 +45,14 @@ export default {
     },
     onInput() {
       this.$emit('input', '')
-    }
+    },
+    // Option
+    onUndo() {
+      this.$emit('undo');
+    },
+    onRedo() {
+      this.$emit('redo');
+    },
   },
 }
 ```
@@ -50,12 +66,16 @@ export default {
 | height | Number | 높이 |
 | focus | Boolean | 현재 focus |
 | color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
+| undo | Boolean | undo 상태 |
+| redo | Boolean | redo 상태 |
 
 ## Emit
 | Event | Type | Describe |
 | --- | --- | --- |
 | change | String | editor 데이터 |
 | input | String | editor 데이터 |
+| undo |  | undo 실행 |
+| redo |  | redo 실행 |
 
 
 ## 예제 - javascript
@@ -223,6 +243,9 @@ export interface Editor {
   scope: Array<string | RegExp>;
   exclude?: Array<string | RegExp>;
 }
+export interface EditorOption {
+  undoManager?: boolean;
+}
 ```
 
 ## Editor
@@ -231,3 +254,9 @@ export interface Editor {
 | component | vue component | vue 컴포넌트 |
 | scope | [String \| RegExp] | 파일지정(string 확장자) |
 | exclude | [String \| RegExp] | 예외 파일지정(string 확장자) |
+| option | Object | 옵션 |
+
+## Option
+| Name | Type | Describe |
+| --- | --- | --- |
+| undoManager | Boolean | Undo Manager 사용여부 |

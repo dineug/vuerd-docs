@@ -29,6 +29,15 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    // Option
+    undo: {
+      type: Boolean,
+      default: false,
+    },
+    redo: {
+      type: Boolean,
+      default: false,
+    },
   },
   methods: {
     onChange() {
@@ -36,7 +45,14 @@ export default {
     },
     onInput() {
       this.$emit('input', '')
-    }
+    },
+    // Option
+    onUndo() {
+      this.$emit('undo');
+    },
+    onRedo() {
+      this.$emit('redo');
+    },
   },
 }
 ```
@@ -50,12 +66,16 @@ export default {
 | height | Number | height |
 | focus | Boolean | current focus |
 | color | Object | [theme color](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme) |
+| undo | Boolean | undo status |
+| redo | Boolean | redo status |
 
 ## Emit
 | Event | Type | Describe |
 | --- | --- | --- |
 | change | String | editor data |
 | input | String | editor data |
+| undo |  | undo execute |
+| redo |  | redo execute |
 
 
 ## Example - javascript
@@ -222,6 +242,10 @@ export interface Editor {
   component: Component;
   scope: Array<string | RegExp>;
   exclude?: Array<string | RegExp>;
+  option?: EditorOption;
+}
+export interface EditorOption {
+  undoManager?: boolean;
 }
 ```
 
@@ -231,3 +255,9 @@ export interface Editor {
 | component | vue component | vue component |
 | scope | [String \| RegExp] | file designation(string extension) |
 | exclude | [String \| RegExp] | exception file designation(string extension) |
+| option | Object | option |
+
+## Option
+| Name | Type | Describe |
+| --- | --- | --- |
+| undoManager | Boolean | Undo Manager use status |
