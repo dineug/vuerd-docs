@@ -7400,6 +7400,22 @@ vuerd-core@^0.2.17:
     vue-property-decorator "^8.1.0"
     vuex "^3.1.1"
 
+vuerd-core@^0.2.18:
+  version "0.2.18"
+  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.18.tgz#ac7ce145f395bc1834e2f6589287ca780684040c"
+  integrity sha512-AzdNyAoaq2fvMDQ+McpMXw3MOGeNgUH815ZFqLqGL/5Vy7yhQmnA+bF7A7S4Hz9c3u788wQiD86wAlEI6D0LMw==
+  dependencies:
+    "@tweenjs/tween.js" "^18.1.2"
+    core-js "^2.6.5"
+    rxjs "^6.5.2"
+    undo-manager "^1.0.5"
+    uuid "^3.3.3"
+    vscode-icons-js "^9.3.0"
+    vue "^2.6.10"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.1.0"
+    vuex "^3.1.1"
+
 vuerd-core@^0.2.8:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.8.tgz#261cff4d022d01b28483cf9db1b5f4a060686040"
@@ -7413,6 +7429,21 @@ vuerd-core@^0.2.8:
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
+
+vuerd-plugin-erd@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.1.1.tgz#71ccd08f5bd5dc1a7f38d57fd53112569c6bca43"
+  integrity sha512-VFkMTVdjsRjtQuMzI+PFyVrHf8K2fvqMZoiQ1gcniapKHoSFd+mmpgJyEO4cAMo/AVyzUJP0Q6ZEPwKdo6RfoQ==
+  dependencies:
+    "@tweenjs/tween.js" "^18.1.2"
+    core-js "^2.6.5"
+    rxjs "^6.5.2"
+    uuid "^3.3.3"
+    vue "^2.6.10"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.1.0"
+    vuerd-core "^0.2.17"
+    vuex "^3.1.1"
 
 vuerd-plugin-tui.editor@^0.1.6:
   version "0.1.6"

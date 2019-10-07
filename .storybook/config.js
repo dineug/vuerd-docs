@@ -7,10 +7,13 @@ import '../src/js/markedHighlight'
 import MarkDown from '../src/components/MarkDown.vue'
 import VuerdCore from 'vuerd-core'
 import TuiEditor from 'vuerd-plugin-tui.editor'
+import ERD from 'vuerd-plugin-erd'
 import 'vuerd-core/dist/vuerd-core.css'
 import 'vuerd-plugin-tui.editor/dist/vuerd-plugin-tui.editor.css'
+import 'vuerd-plugin-erd/dist/vuerd-plugin-erd.css'
 
 VuerdCore.use(TuiEditor)
+VuerdCore.use(ERD)
 Vue.use(VuerdCore)
 
 Vue.component('MarkDown', MarkDown)
