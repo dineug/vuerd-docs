@@ -2,26 +2,79 @@
   <div class="workspace-vuerd">
     <Vuerd
             :focus="true"
+            :undo="undo"
+            :redo="redo"
             :width="width"
             :height="height"
             :value="value"
+            @input="onInput"
+            @change="onChange"
+            @undo="onUndo"
+            @redo="onRedo"
     />
   </div>
 </template>
 
 <script>
+  import UndoManager from 'undo-manager'
+
   export default {
     name: 'DemoVuerd',
     data: () => ({
       width: 2000,
       height: 2000,
       value: '',
+      undo: false,
+      redo: false,
+      undoManager: null
     }),
     methods: {
       onResize() {
         this.width = window.innerWidth
         this.height = window.innerHeight
-      }
+      },
+      callback() {
+        this.undo = this.undoManager.hasUndo();
+        this.redo = this.undoManager.hasRedo();
+      },
+      onInput(value) {
+        if (this.value !== value) {
+          const oldValue = this.value
+          this.undoManager.add({
+            undo: () => {
+              this.value = oldValue
+            },
+            redo: () => {
+              this.value = value
+            },
+          })
+        }
+        this.value = value
+      },
+      onChange(value) {
+        if (this.value !== value) {
+          const oldValue = this.value
+          this.undoManager.add({
+            undo: () => {
+              this.value = oldValue
+            },
+            redo: () => {
+              this.value = value
+            },
+          })
+        }
+        this.value = value
+      },
+      onUndo() {
+        this.undoManager.undo()
+      },
+      onRedo() {
+        this.undoManager.redo()
+      },
+    },
+    created() {
+      this.undoManager = new UndoManager()
+      this.undoManager.setCallback(this.callback)
     },
     mounted() {
       window.addEventListener('resize', this.onResize)
