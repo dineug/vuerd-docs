@@ -7389,7 +7389,7 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuerd-core@^0.2.10, vuerd-core@^0.2.18:
+vuerd-core@^0.2.18:
   version "0.2.18"
   resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.18.tgz#ac7ce145f395bc1834e2f6589287ca780684040c"
   integrity sha512-AzdNyAoaq2fvMDQ+McpMXw3MOGeNgUH815ZFqLqGL/5Vy7yhQmnA+bF7A7S4Hz9c3u788wQiD86wAlEI6D0LMw==
