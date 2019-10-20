@@ -2647,7 +2647,7 @@ core-js@^1.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   integrity sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY=
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
   integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
@@ -2656,6 +2656,11 @@ core-js@^3.0.1, core-js@^3.0.4:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.2.1.tgz#cd41f38534da6cc59f7db050fe67307de9868b09"
   integrity sha512-Qa5XSVefSVPRxy2XfUC13WbvqkxhkwB3ve+pgCQveNgYzbM/UxZeu1dcOX/xr4UmfUd+muuvsaxilQzCyUurMw==
+
+core-js@^3.1.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.2.tgz#cd42da1d7b0bb33ef11326be3a721934277ceb42"
+  integrity sha512-S1FfZpeBchkhyoY76YAdFzKS4zz9aOK7EeFaNA2aJlyXyA+sgqz6xdxmLPGXEAf0nF44MVN1kSjrA9Kt3ATDQg==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -7389,13 +7394,16 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuerd-core@^0.2.18:
-  version "0.2.18"
-  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.18.tgz#ac7ce145f395bc1834e2f6589287ca780684040c"
-  integrity sha512-AzdNyAoaq2fvMDQ+McpMXw3MOGeNgUH815ZFqLqGL/5Vy7yhQmnA+bF7A7S4Hz9c3u788wQiD86wAlEI6D0LMw==
+vuerd-core@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.3.0.tgz#e338372df382effab425ef6601bdd76ebdaafd19"
+  integrity sha512-VwvfiRI+tO940BIWS3jZdgkBgrazSZCFmZe6A3led0XCcLCalhRJB4qhzTcgNHKa5ScSpjEmayJ4Yo1jZX4Kxw==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
-    core-js "^2.6.5"
+    core-js "^3.1.2"
+    github-markdown-css "^3.0.1"
+    highlight.js "^9.15.10"
+    marked "^0.7.0"
     rxjs "^6.5.2"
     undo-manager "^1.0.5"
     uuid "^3.3.3"
@@ -7403,45 +7411,35 @@ vuerd-core@^0.2.18:
     vue "^2.6.10"
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"
-    vuex "^3.1.1"
-
-vuerd-core@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.2.8.tgz#261cff4d022d01b28483cf9db1b5f4a060686040"
-  integrity sha512-J2izYxWFYMNIR3xyk/dzkHGmpLCTCqovWBygEu7W2/09N7rdLJHucV4Pwke2d+Yjc+KQTdIqAApc6uJCMLcOCA==
-  dependencies:
-    "@tweenjs/tween.js" "^18.1.2"
-    core-js "^2.6.5"
-    rxjs "^6.5.2"
-    uuid "^3.3.2"
-    vue "^2.6.10"
-    vue-class-component "^7.0.2"
-    vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-plugin-erd@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.1.9.tgz#f397fab68a9c8d591fc43a1ab663a610e144724f"
-  integrity sha512-U6Df/mdZFz0meRtdvo1YhCPjDfPALl7ZyNgrBzcljEGBWujwCRj9xu20kNR2LcWHk3E8C7uqpFG2ho5C9EZCKw==
+vuerd-plugin-erd@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.2.0.tgz#8aa83b4605a7bb6b549c62b049de71cc7f34bfda"
+  integrity sha512-D3YHjplfmuETSASxMXxaFPfrRm0q97ijmHPkoNNB40PibhVV+ES0TnEcnL2dg42T7hVR7Gh9lrvdOJwIHYDMMg==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
-    core-js "^2.6.5"
+    core-js "^3.1.2"
     monaco-editor "^0.18.1"
     rxjs "^6.5.2"
     uuid "^3.3.3"
     vue "^2.6.10"
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"
-    vuerd-core "^0.2.18"
-    vuex "^3.1.1"
+    vuerd-core "^0.3.0"
+    vuex "^3.0.1"
 
-vuerd-plugin-tui.editor@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.1.6.tgz#20f51810cc56f9bdb1f564ecf6e5cef47fd775c3"
-  integrity sha512-oH15rVcfX2OSVQ4YKXZ3VtfX7knYE1vO7wGOHaosR1BkKy6OnmzpZSYVciTskqHnWPiP7bW36zDyRz9dPnPWsA==
+vuerd-plugin-tui.editor@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.2.0.tgz#9ef901eb63e60a477b5033c873f6feed932e7c25"
+  integrity sha512-CJUZty+ReDg76ZyzW/AbQZ3obp8TLSnhRFNbKLEjPR49y/HfFHoJQkpNhuEgWKoIrcXRNqQbjfDnG6dm9QHGCw==
   dependencies:
     "@toast-ui/vue-editor" "^1.1.1"
-    vuerd-core "^0.2.8"
+    core-js "^3.1.2"
+    vue "^2.6.10"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.1.0"
+    vuerd-core "^0.3.0"
 
 vuex@^3.0.1, vuex@^3.1.1:
   version "3.1.1"
