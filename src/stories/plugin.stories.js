@@ -13,3 +13,8 @@ stories.add('theme', () => ({
   computed: {md: () => markdown[`${store.state.locale}/theme.md`]},
   template: `<MarkDown :value="md"/>`,
 }))
+
+stories.add('remote', () => ({
+  computed: {md: () => markdown[`${store.state.locale}/remote.md`]},
+  template: `<MarkDown :value="md"/>`,
+}))

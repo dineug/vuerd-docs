@@ -1,6 +1,7 @@
 {
   "name": "vuerd-docs",
   "version": "1.0.0",
+  "private": true,
   "description": "vuerd document",
   "scripts": {
     "storybook": "start-storybook -p 8000 -s ./public",

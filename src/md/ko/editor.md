@@ -245,6 +245,11 @@ export interface Editor {
 }
 export interface EditorOption {
   undoManager?: boolean;
+  readme?: EditorReadme;
+}
+export interface EditorReadme {
+  owner: string;
+  repo: string;
 }
 ```
 
@@ -260,3 +265,4 @@ export interface EditorOption {
 | Name | Type | Describe |
 | --- | --- | --- |
 | undoManager | Boolean | Undo Manager 사용여부 |
+| readme | EditorReadme | GitHub Repository README |

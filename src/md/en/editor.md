@@ -246,6 +246,11 @@ export interface Editor {
 }
 export interface EditorOption {
   undoManager?: boolean;
+  readme?: EditorReadme;
+}
+export interface EditorReadme {
+  owner: string;
+  repo: string;
 }
 ```
 
@@ -255,9 +260,10 @@ export interface EditorOption {
 | component | vue component | vue component |
 | scope | [String \| RegExp] | file designation(string extension) |
 | exclude | [String \| RegExp] | exception file designation(string extension) |
-| option | Object | option |
+| option | EditorOption | option |
 
 ## Option
 | Name | Type | Describe |
 | --- | --- | --- |
 | undoManager | Boolean | Undo Manager use status |
+| readme | EditorReadme | GitHub Repository README |

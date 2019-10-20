@@ -21,7 +21,10 @@
   }
 </script>
 
-<style>
+<style scoped>
+  @import "~highlight.js/styles/monokai-sublime.css";
+  @import "~github-markdown-css";
+
   .markdown-body {
     box-sizing: border-box;
     min-width: 200px;
@@ -36,7 +39,7 @@
     }
   }
 
-  .markdown-body pre {
+  .markdown-body /deep/ pre {
     padding: 14px 16px;
     color: white;
     background-color: #23241F;
