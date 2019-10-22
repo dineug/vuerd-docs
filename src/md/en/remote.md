@@ -45,7 +45,7 @@ export interface TreeMove {
 | --- | --- | --- |
 | name | String | file or folder name |
 | open | Boolean | folder open |
-| children | Tree | folder children |
+| children | [Tree] | folder children |
 
 ## TreeSave
 | Name | Type | Describe |

@@ -34,32 +34,32 @@ export interface TreeMove {
 | Name | Type | Describe |
 | --- | --- | --- |
 | name | String | remote name |
-| findTreeBy | Function | tree data |
-| findFileByPath | Function | file data |
-| save | Function | file save |
-| deleteByPaths | Function | file delete |
-| move | Function | file move |
+| findTreeBy | Function | 파일 트리 데이터 |
+| findFileByPath | Function | 파일 데이터 |
+| save | Function | 파일 저장 |
+| deleteByPaths | Function | 파일 삭제 |
+| move | Function | 파일 이동 |
 
 ## Tree
 | Name | Type | Describe |
 | --- | --- | --- |
-| name | String | file or folder name |
-| open | Boolean | folder open |
-| children | Tree | folder children |
+| name | String | 파일 or 폴더 이름 |
+| open | Boolean | 폴더 open 여부 |
+| children | [Tree] | 폴더 하위 트리 |
 
 ## TreeSave
 | Name | Type | Describe |
 | --- | --- | --- |
-| oldPath | String or null | rename old path |
-| path | String | After the change path |
-| name | String | After the change name |
-| value | String or undefined | file data |
+| oldPath | String or null | 이름 변경전 path |
+| path | String | 변경후 path |
+| name | String | 변경후 이름 |
+| value | String or undefined | 파일 데이터 |
 
 ## TreeMove
 | Name | Type | Describe |
 | --- | --- | --- |
-| fromPaths | [String] | move from paths |
-| toPath | String | move to path |
+| fromPaths | [String] | 이동할 paths |
+| toPath | String | 이동 위치 path |
 
 
 ## Example - javascript
