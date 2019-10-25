@@ -4932,11 +4932,6 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-monaco-editor@^0.18.1:
-  version "0.18.1"
-  resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.18.1.tgz#ced7c305a23109875feeaf395a504b91f6358cfc"
-  integrity sha512-fmL+RFZ2Hrezy+X/5ZczQW51LUmvzfcqOurnkCIRFTyjdVjzR7JvENzI6+VKBJzJdPh6EYL4RoWl92b2Hrk9fw==
-
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -7413,14 +7408,14 @@ vuerd-core@^0.3.0:
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-plugin-erd@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.2.0.tgz#8aa83b4605a7bb6b549c62b049de71cc7f34bfda"
-  integrity sha512-D3YHjplfmuETSASxMXxaFPfrRm0q97ijmHPkoNNB40PibhVV+ES0TnEcnL2dg42T7hVR7Gh9lrvdOJwIHYDMMg==
+vuerd-plugin-erd@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.2.1.tgz#55bd7d0b33e7b20dafb4f3957a9e3d2a0977ac72"
+  integrity sha512-0UyQYeF0Q/dylG8p0PE7Of18dpzZ9vM6mMGhs5gND5GVqP+84CfX5BoFwalFgzG320XFXMUasTlgbHbCbW+V/g==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
     core-js "^3.1.2"
-    monaco-editor "^0.18.1"
+    highlight.js "^9.15.10"
     rxjs "^6.5.2"
     uuid "^3.3.3"
     vue "^2.6.10"
