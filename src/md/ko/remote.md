@@ -9,6 +9,17 @@ export interface Remote {
   save(treeSaves: TreeSave[]): Promise<void>;
   deleteByPaths(paths: string[]): Promise<void>;
   move(treeMove: TreeMove): Promise<void>;
+  option?: RemoteOption;
+}
+
+export interface RemoteOption {
+  explorerContextmenu?: ExplorerContextmenu[];
+}
+
+export interface ExplorerContextmenu {
+  name: string;
+  children?: ExplorerContextmenu[];
+  execute?(selectPaths: string[]): void;
 }
 
 export interface Tree {
@@ -39,6 +50,11 @@ export interface TreeMove {
 | save | Function | 파일 저장 |
 | deleteByPaths | Function | 파일 삭제 |
 | move | Function | 파일 이동 |
+
+## RemoteOption
+| Name | Type | Describe |
+| --- | --- | --- |
+| explorerContextmenu | [ExplorerContextmenu] | 탐색기 Contextmenu |
 
 ## Tree
 | Name | Type | Describe |
