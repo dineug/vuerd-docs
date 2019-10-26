@@ -84,6 +84,7 @@ export interface TreeMove {
 // src/plugins/vuerd-core.js
 import Vue from "vue";
 import VuerdCore from "vuerd-core";
+import "vuerd-core/dist/vuerd-core.css";
 
 async function findFileByPath(path) {
   // path: "vuerd-core/public/static/logo.png"
@@ -162,6 +163,7 @@ Vue.use(VuerdCore);
 // src/plugins/vuerd-core.ts
 import Vue from "vue";
 import VuerdCore, { Command, Tree, TreeMove, TreeSave } from "vuerd-core";
+import "vuerd-core/dist/vuerd-core.css";
 
 async function findFileByPath(path: string): Promise<string> {
   // path: "vuerd-core/public/static/logo.png"
