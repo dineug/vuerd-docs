@@ -63,5 +63,5 @@ export interface Plugin<T> {
 ## use
 | Name | Type | Describe |
 | --- | --- | --- |
-| command | Command | [editor](http://localhost:8000/?path=/story/plugin-command--editor), [theme](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme), [remote](http://localhost:8000/?path=/story/plugin-command--remote) |
+| command | Command | [editor](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--editor), [theme](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme), [remote](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--remote) |
 | option | T | plugin option |
