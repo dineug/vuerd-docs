@@ -7443,10 +7443,10 @@ vuerd-plugin-erd@^0.2.3:
     vuerd-core "^0.3.0"
     vuex "^3.0.1"
 
-vuerd-plugin-tui.editor@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.2.1.tgz#851913989d3b1027b8d71edfa28c11b934d24126"
-  integrity sha512-iNq01EwkSe86kFUsBemNGpB7t5N7WR6mCLHkQFPNUFkm+pZ1KpypVMb3frdUjZwtCxRy4evm2sSyIFsIsfbTvg==
+vuerd-plugin-tui.editor@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.2.2.tgz#38b690a67e5370053198a5195823c8d9c0466d74"
+  integrity sha512-aG73yGKayXW8uKwfr7f3yilc/95Vb9kfQwKPfk+Z2vyiFm5yGyEVudM21rHqW6L7PaJiMXaLjom4OKh2toqNiw==
   dependencies:
     "@toast-ui/vue-editor" "^1.1.1"
     core-js "^3.1.2"
