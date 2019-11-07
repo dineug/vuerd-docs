@@ -52,3 +52,16 @@ export default class App extends Vue {
 }
 </script>
 ```
+
+## vuerd-core plugin use interface
+```typescript
+export interface Plugin<T> {
+  install(command: Command, option?: T): void;
+}
+```
+
+## use
+| Name | Type | Describe |
+| --- | --- | --- |
+| command | Command | [editor](http://localhost:8000/?path=/story/plugin-command--editor), [theme](https://vuerd.github.io/vuerd-docs/?path=/story/plugin-command--theme), [remote](http://localhost:8000/?path=/story/plugin-command--remote) |
+| option | T | 플러그인 옵션 |

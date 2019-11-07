@@ -7408,10 +7408,10 @@ vuerd-core@^0.3.0:
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-core@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.3.2.tgz#9e38f34c333e561430212c5a32e95de855055464"
-  integrity sha512-iVyOSBz6KbH1NxU5JeTEpAwKW2GqjxttW/vkVPsWa2xAfVWieyQMSD5nu3sknbGigiIawxy03Kr2fBdso79kHw==
+vuerd-core@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/vuerd-core/-/vuerd-core-0.3.3.tgz#0852f658875ea5ee3abd9ae823f11f717e633755"
+  integrity sha512-ykAEpk/3KVKoDABBatvcM2xqxXuhKHNx0djeNN0T+VyyUic/WUvmlmGjTfCJhnumEIk+LOFWg9HZqcvwCJXrmg==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
     core-js "^3.1.2"
@@ -7427,10 +7427,10 @@ vuerd-core@^0.3.2:
     vue-property-decorator "^8.1.0"
     vuex "^3.0.1"
 
-vuerd-plugin-erd@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.2.1.tgz#55bd7d0b33e7b20dafb4f3957a9e3d2a0977ac72"
-  integrity sha512-0UyQYeF0Q/dylG8p0PE7Of18dpzZ9vM6mMGhs5gND5GVqP+84CfX5BoFwalFgzG320XFXMUasTlgbHbCbW+V/g==
+vuerd-plugin-erd@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.2.3.tgz#6a2e3bb8eb50a3ff9a3e4f79e633d87889fe85aa"
+  integrity sha512-db35TdyPd/SNzO5+w8IE2Wp68DEWMJqX9cgwu6AWBrI3xEKXBhhxPolh9uBLPNbersXAY0AAQetaU1sGBjoO9g==
   dependencies:
     "@tweenjs/tween.js" "^18.1.2"
     core-js "^3.1.2"
@@ -7443,17 +7443,17 @@ vuerd-plugin-erd@^0.2.1:
     vuerd-core "^0.3.0"
     vuex "^3.0.1"
 
-vuerd-plugin-tui.editor@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.2.0.tgz#9ef901eb63e60a477b5033c873f6feed932e7c25"
-  integrity sha512-CJUZty+ReDg76ZyzW/AbQZ3obp8TLSnhRFNbKLEjPR49y/HfFHoJQkpNhuEgWKoIrcXRNqQbjfDnG6dm9QHGCw==
+vuerd-plugin-tui.editor@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-tui.editor/-/vuerd-plugin-tui.editor-0.2.1.tgz#851913989d3b1027b8d71edfa28c11b934d24126"
+  integrity sha512-iNq01EwkSe86kFUsBemNGpB7t5N7WR6mCLHkQFPNUFkm+pZ1KpypVMb3frdUjZwtCxRy4evm2sSyIFsIsfbTvg==
   dependencies:
     "@toast-ui/vue-editor" "^1.1.1"
     core-js "^3.1.2"
     vue "^2.6.10"
     vue-class-component "^7.0.2"
     vue-property-decorator "^8.1.0"
-    vuerd-core "^0.3.0"
+    vuerd-core "^0.3.3"
 
 vuex@^3.0.1, vuex@^3.1.1:
   version "3.1.1"
