@@ -1,5 +1,6 @@
 # vuerd-core
 Editor Common UI
+![statusbar](https://vuerd.github.io/vuerd-docs/images/vuerd-core.gif)
 
 ## Document
 [Storybook](https://vuerd.github.io/vuerd-docs/)   
