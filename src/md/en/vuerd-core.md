@@ -1,4 +1,5 @@
 # Component vuerd-core
+![vuerd-core](https://vuerd.github.io/vuerd-docs/images/vuerd-core.gif)
 
 ## Prop
 | Name | Type | Describe |
