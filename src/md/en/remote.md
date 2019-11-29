@@ -14,12 +14,19 @@ export interface Remote {
 
 export interface RemoteOption {
   explorerContextmenu?: ExplorerContextmenu[];
+  titleBarContextmenu?: TitleBarContextmenu[];
 }
 
 export interface ExplorerContextmenu {
   name: string;
   children?: ExplorerContextmenu[];
   execute?(selectPaths: string[]): void;
+}
+
+export interface TitleBarContextmenu {
+  name: string;
+  children?: TitleBarContextmenu[];
+  execute?(): void;
 }
 
 export interface Tree {
@@ -56,6 +63,7 @@ export interface TreeMove {
 | Name | Type | Describe |
 | --- | --- | --- |
 | explorerContextmenu | [ExplorerContextmenu] | Explorer Contextmenu |
+| titleBarContextmenu | [TitleBarContextmenu] | TitleBar Contextmenu |
 
 ## Tree
 | Name | Type | Describe |
