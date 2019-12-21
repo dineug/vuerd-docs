@@ -7350,10 +7350,10 @@ vuerd-plugin-erd@^0.2.6:
     vuerd-core "^0.4.2"
     vuex "^3.1.2"
 
-vuerd-plugin-summernote@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-summernote/-/vuerd-plugin-summernote-0.1.0.tgz#62c81c5097095e3b8be76574ee73c74a3ea89e09"
-  integrity sha512-IZwHoKGwz0XHF/RYNXsVP7gS8upA32Oty8bNhrh4J5oEUxWy8aBiirlHg2xIiRbsDqzQ6Q20/Ov+bW6jqYGMEg==
+vuerd-plugin-summernote@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-summernote/-/vuerd-plugin-summernote-0.1.1.tgz#7f835044966d75220d440e30a8b5e41eaef34e10"
+  integrity sha512-KM+cvmtdsbzf46vkngrhlTWfFmKGbv1TUSLigQH0Kbrly1bjno654rxVUXNzYNHkZdu3jkE8AOhgQljZNflf6g==
   dependencies:
     core-js "^3.4.3"
     jquery "^3.4.1"
