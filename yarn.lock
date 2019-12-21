@@ -2615,6 +2615,11 @@ core-js@^3.0.1, core-js@^3.0.4, core-js@^3.1.2:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
   integrity sha512-b+BBmCZmVgho8KnBUOXpvlqEMguko+0P+kXCwD4vIprsXC6ht1qgPxtb1OK6XgSlrySF71wkwBQ0Hv695bk9gQ==
 
+core-js@^3.4.3:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.0.tgz#2b854e451de1967d1e29896025cdc13a2518d9ea"
+  integrity sha512-AHPTNKzyB+YwgDWoSOCaid9PUSEF6781vsfiK8qUz62zRR448/XgK2NtCbpiUGizbep8Lrpt0Du19PpGGZvw3Q==
+
 core-js@^3.4.8:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.5.0.tgz#66df8e49be4bd775e6f952a9d083b756ad41c1ed"
@@ -4386,7 +4391,7 @@ isomorphic-fetch@^2.1.1:
     node-fetch "^1.0.1"
     whatwg-fetch ">=0.10.0"
 
-jquery@^3.3.1:
+jquery@^3.3.1, jquery@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
@@ -6741,6 +6746,11 @@ style-loader@^0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
+summernote@^0.8.12:
+  version "0.8.12"
+  resolved "https://registry.yarnpkg.com/summernote/-/summernote-0.8.12.tgz#563502ed882abde9daab9db1e7eba330d37ac020"
+  integrity sha512-RVEJoIyztwPpopTwZvjag1WOvbmhUGFe6Mc9RADzzcX1ogG8pIXCB88icu/vjNYihITrzj2zZsoFMcDRHSlhEA==
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
@@ -7339,6 +7349,20 @@ vuerd-plugin-erd@^0.2.6:
     vue-property-decorator "^8.3.0"
     vuerd-core "^0.4.2"
     vuex "^3.1.2"
+
+vuerd-plugin-summernote@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-summernote/-/vuerd-plugin-summernote-0.1.0.tgz#62c81c5097095e3b8be76574ee73c74a3ea89e09"
+  integrity sha512-IZwHoKGwz0XHF/RYNXsVP7gS8upA32Oty8bNhrh4J5oEUxWy8aBiirlHg2xIiRbsDqzQ6Q20/Ov+bW6jqYGMEg==
+  dependencies:
+    core-js "^3.4.3"
+    jquery "^3.4.1"
+    rxjs "^6.5.3"
+    summernote "^0.8.12"
+    vue "^2.6.10"
+    vue-class-component "^7.0.2"
+    vue-property-decorator "^8.3.0"
+    vuerd-core "^0.4.4"
 
 vuerd-plugin-tui.editor@^0.2.3:
   version "0.2.3"
