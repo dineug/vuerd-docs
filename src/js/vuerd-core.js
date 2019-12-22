@@ -43,7 +43,7 @@ const dataList = [
     value: `<h1>hellow</h1><p><a href="https://github.com/quill/quill">quill</a></p>`
   },
   {
-    paht: "example/medium editor.medium.rich",
+    path: "example/medium editor.medium.rich",
     value: `<h1>hellow</h1><p><a href="https://github.com/yabwe/medium-editor">medium-editor</a></p>`
   }
 ];
