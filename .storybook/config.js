@@ -1,10 +1,10 @@
 import {configure, addParameters, addDecorator} from '@storybook/vue'
 import {withContexts} from '@storybook/addon-contexts/vue'
-import {language} from '../src/js/contexts'
+import {language} from '../src/plugins/contexts'
 
 import Vue from 'vue'
-import '../src/js/vuerd-core'
-import '../src/js/markedHighlight'
+import '../src/plugins/vuerd-core'
+import '../src/plugins/markedHighlight'
 import MarkDown from '../src/components/MarkDown.vue'
 
 Vue.component('MarkDown', MarkDown)

@@ -1,5 +1,5 @@
 import {storiesOf} from '@storybook/vue'
-import markdown from '../js/markdown'
+import markdown from '../plugins/markdown'
 import store from '../store'
 
 const stories = storiesOf('Component|Structure', module)
