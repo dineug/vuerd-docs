@@ -4,11 +4,13 @@ import TuiEditor from 'vuerd-plugin-tui.editor'
 import ERD, {Vuerd} from 'vuerd-plugin-erd'
 import Summernote from 'vuerd-plugin-summernote'
 import Quill from 'vuerd-plugin-quill'
+import MediumEditor from 'vuerd-plugin-medium-editor'
 import 'vuerd-core/dist/vuerd-core.css'
 import 'vuerd-plugin-tui.editor/dist/vuerd-plugin-tui.editor.css'
 import 'vuerd-plugin-erd/dist/vuerd-plugin-erd.css'
 import 'vuerd-plugin-summernote/dist/vuerd-plugin-summernote.css'
 import 'vuerd-plugin-quill/dist/vuerd-plugin-quill.css'
+import 'vuerd-plugin-medium-editor/dist/vuerd-plugin-medium-editor.css'
 
 const dataList = [
   {
@@ -39,6 +41,10 @@ const dataList = [
   {
     path: "example/quill editor.quill.rich",
     value: `<h1>hellow</h1><p><a href="https://github.com/quill/quill">quill</a></p>`
+  },
+  {
+    paht: "example/medium editor.medium.rich",
+    value: `<h1>hellow</h1><p><a href="https://github.com/yabwe/medium-editor">medium-editor</a></p>`
   }
 ];
 
@@ -78,6 +84,9 @@ async function findTreeBy() {
       },
       {
         name: "quill editor.quill.rich"
+      },
+      {
+        name: "medium editor.medium.rich"
       }
     ]
   };
@@ -105,6 +114,9 @@ VuerdCore.use(ERD)
 VuerdCore.use(Summernote)
 VuerdCore.use(Quill, {
   scope: ["quill.rich"]
+})
+VuerdCore.use(MediumEditor, {
+  scope: ["medium.rich"]
 })
 Vue.use(VuerdCore)
 
