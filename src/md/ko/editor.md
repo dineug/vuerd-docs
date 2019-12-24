@@ -147,6 +147,7 @@ import TextEditor from './TextEditor'
 export default {
   install(command) {
     command.editorAdd({
+      name: "TextEditor",
       component: TextEditor,
       scope: [
         'txt',
@@ -226,6 +227,7 @@ import {Command} from 'vuerd-core';
 export default {
   install(command: Command) {
     command.editorAdd({
+      name: "TextEditor",
       component: TextEditor,
       scope: [
         'txt',
@@ -239,6 +241,7 @@ export default {
 ```typescript
 import {Component} from 'vue';
 export interface Editor {
+  name: string;
   component: Component;
   scope: Array<string | RegExp>;
   exclude?: Array<string | RegExp>;
@@ -256,6 +259,7 @@ export interface EditorReadme {
 ## Editor
 | Name | Type | Describe |
 | --- | --- | --- |
+| name | String | editor 이름 |
 | component | vue component | vue 컴포넌트 |
 | scope | [String \| RegExp] | 파일지정(string 확장자) |
 | exclude | [String \| RegExp] | 예외 파일지정(string 확장자) |
