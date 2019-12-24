@@ -1,1 +1,1 @@
-import '@storybook/addon-contexts/register'
+import "@storybook/addon-contexts/register";

@@ -1,20 +1,20 @@
-import {storiesOf} from '@storybook/vue'
-import markdown from '../plugins/markdown'
-import store from '../store'
+import { storiesOf } from "@storybook/vue";
+import markdown from "../plugins/markdown";
+import store from "../store";
 
-const stories = storiesOf('Plugin|Command', module)
+const stories = storiesOf("Plugin|Command", module);
 
-stories.add('editor', () => ({
-  computed: {md: () => markdown[`${store.state.locale}/editor.md`]},
-  template: `<MarkDown :value="md"/>`,
-}))
+stories.add("editor", () => ({
+  computed: { md: () => markdown[`${store.state.locale}/editor.md`] },
+  template: `<MarkDown :value="md"/>`
+}));
 
-stories.add('theme', () => ({
-  computed: {md: () => markdown[`${store.state.locale}/theme.md`]},
-  template: `<MarkDown :value="md"/>`,
-}))
+stories.add("theme", () => ({
+  computed: { md: () => markdown[`${store.state.locale}/theme.md`] },
+  template: `<MarkDown :value="md"/>`
+}));
 
-stories.add('remote', () => ({
-  computed: {md: () => markdown[`${store.state.locale}/remote.md`]},
-  template: `<MarkDown :value="md"/>`,
-}))
+stories.add("remote", () => ({
+  computed: { md: () => markdown[`${store.state.locale}/remote.md`] },
+  template: `<MarkDown :value="md"/>`
+}));

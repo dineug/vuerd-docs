@@ -1,38 +1,38 @@
-import store from '../store'
+import store from "../store";
 
 export const language = [
   {
-    icon: 'globe',
-    title: 'Languages',
+    icon: "globe",
+    title: "Languages",
     components: [
       {
-        name: 'Languages.Provider',
-        props: ['locale'],
+        name: "Languages.Provider",
+        props: ["locale"],
         watch: {
           locale(value) {
-            store.commit('setLocale', value)
-          },
+            store.commit("setLocale", value);
+          }
         },
-        template: `<div><slot /></div>`,
-      },
+        template: `<div><slot /></div>`
+      }
     ],
     params: [
       {
-        name: 'English',
+        name: "English",
         props: {
-          locale: 'en',
+          locale: "en"
         },
-        default: true,
+        default: true
       },
       {
-        name: '한국어',
+        name: "한국어",
         props: {
-          locale: 'ko',
-        },
-      },
+          locale: "ko"
+        }
+      }
     ],
     options: {
-      cancelable: false,
-    },
-  },
-]
+      cancelable: false
+    }
+  }
+];

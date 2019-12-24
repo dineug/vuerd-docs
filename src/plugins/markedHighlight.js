@@ -1,5 +1,5 @@
-import hljs from 'highlight.js'
-import marked from 'marked'
+import hljs from "highlight.js";
+import marked from "marked";
 
 marked.setOptions({
   highlight: function(code, lang) {
@@ -13,4 +13,4 @@ marked.setOptions({
       return hljs.highlightAuto(code).value;
     }
   }
-})
+});

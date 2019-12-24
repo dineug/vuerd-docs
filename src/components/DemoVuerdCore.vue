@@ -1,13 +1,11 @@
 <template>
-  <VuerdCore/>
+  <VuerdCore />
 </template>
 
 <script>
-  export default {
-    name: 'DemoVuerdCore'
-  }
+export default {
+  name: "DemoVuerdCore"
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
