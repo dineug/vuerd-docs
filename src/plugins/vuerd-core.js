@@ -96,13 +96,49 @@ VuerdCore.use({
 });
 
 VuerdCore.use(ERD);
-VuerdCore.use(TuiEditor);
+VuerdCore.use(TuiEditor, {
+  editorOption: {
+    previewStyle: "vertical"
+  }
+});
 VuerdCore.use(Quill);
 VuerdCore.use(Summernote, {
-  scope: ["summernote.rich"]
+  scope: ["summernote.rich"],
+  editorOption: {
+    toolbar: [
+      ["style", ["style"]],
+      ["font", ["bold", "underline", "clear"]],
+      ["fontname", ["fontname"]],
+      ["color", ["color"]],
+      ["para", ["ul", "ol", "paragraph"]],
+      ["table", ["table"]],
+      ["insert", ["link", "picture", "video"]],
+      ["view", ["codeview", "help"]]
+    ]
+  }
 });
 VuerdCore.use(MediumEditor, {
-  scope: ["medium-editor.rich"]
+  scope: ["medium-editor.rich"],
+  editorOption: {
+    toolbar: {
+      allowMultiParagraphSelection: true,
+      buttons: [
+        "bold",
+        "italic",
+        "underline",
+        "anchor",
+        "h2",
+        "h3",
+        "quote",
+        "table"
+      ],
+      diffLeft: 0,
+      diffTop: -10,
+      firstButtonClass: "medium-editor-button-first",
+      lastButtonClass: "medium-editor-button-last",
+      align: "center"
+    }
+  }
 });
 Vue.use(VuerdCore);
 
