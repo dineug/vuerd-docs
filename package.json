@@ -5,7 +5,8 @@
   "description": "vuerd document",
   "scripts": {
     "storybook": "start-storybook -p 8000 -s ./public",
-    "build": "build-storybook -c .storybook -s ./public -o dist"
+    "build": "build-storybook -c .storybook -s ./public -o dist",
+    "lint": "eslint --ext .js src/ --fix"
   },
   "author": "dineug <dineug2@gmail.com>",
   "homepage": "https://github.com/vuerd/vuerd-docs#readme",
@@ -20,7 +21,7 @@
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
     "vuerd-core": "^0.4.11",
-    "vuerd-plugin-erd": "^0.2.13",
+    "vuerd-plugin-erd": "^0.2.14",
     "vuerd-plugin-medium-editor": "^0.1.6",
     "vuerd-plugin-quill": "^0.1.7",
     "vuerd-plugin-summernote": "^0.1.4",
@@ -29,12 +30,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
-    "@storybook/addon-contexts": "^5.2.8",
-    "@storybook/vue": "^5.2.8",
+    "@storybook/addon-contexts": "^5.3.9",
+    "@storybook/vue": "^5.3.9",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1",
     "vue-loader": "^15.7.2",
