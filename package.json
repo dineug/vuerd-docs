@@ -21,7 +21,7 @@
     "uuid": "^3.3.3",
     "vue": "^2.6.10",
     "vuerd-core": "^0.4.11",
-    "vuerd-plugin-erd": "^0.3.1",
+    "vuerd-plugin-erd": "^0.3.2",
     "vuerd-plugin-medium-editor": "^0.1.6",
     "vuerd-plugin-quill": "^0.1.7",
     "vuerd-plugin-summernote": "^0.1.4",

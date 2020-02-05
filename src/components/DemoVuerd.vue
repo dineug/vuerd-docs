@@ -7,7 +7,6 @@
       :width="width"
       :height="height"
       :value="value"
-      @input="onInput"
       @change="onChange"
       @undo="onUndo"
       @redo="onRedo"
@@ -36,20 +35,6 @@ export default {
     callback() {
       this.undo = this.undoManager.hasUndo();
       this.redo = this.undoManager.hasRedo();
-    },
-    onInput(value) {
-      if (this.value !== value) {
-        const oldValue = this.value;
-        this.undoManager.add({
-          undo: () => {
-            this.value = oldValue;
-          },
-          redo: () => {
-            this.value = value;
-          }
-        });
-      }
-      this.value = value;
     },
     onChange(value) {
       if (this.value !== value) {
