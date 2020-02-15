@@ -8754,10 +8754,10 @@ vuerd-core@^0.4.9:
     vue-property-decorator "^8.3.0"
     vuex "^3.1.2"
 
-vuerd-plugin-erd@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.4.2.tgz#75a09a6b40dd017541cb0b7648f52e8000a8d1f4"
-  integrity sha512-I7NMB5vi9jjGvacUiUPXXouH2Xy4UTnn+q4izTxugSkSb2v7Qc0+hNWu0VK7rlDFFDRfW4/REQPcOspxbJxeJA==
+vuerd-plugin-erd@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/vuerd-plugin-erd/-/vuerd-plugin-erd-0.4.4.tgz#1c4ac55348da120229a6bcf58441356afceba733"
+  integrity sha512-N9xH3Xov6kaav5sN+89YRDX3xoQdCfE3iiXaT/PXVm8cfHamuyDe9fV/99j8/ne/nyM0yA+uLAqW5a6LWfC2sg==
   dependencies:
     "@tweenjs/tween.js" "^18.4.2"
     change-case "^4.1.1"
